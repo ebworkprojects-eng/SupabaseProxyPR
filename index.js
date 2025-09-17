@@ -10,6 +10,9 @@ server.register(cors, {
   methods: ["GET", "HEAD", "PUT", "PATCH", "POST", "DELETE", "OPTIONS"],
   maxAge: 86400
 });
+
+
+
 //edit
 const upstream = process.env.SUPABASE_URL;
 if (!upstream) throw new Error("SUPABASE_URL not provided");
